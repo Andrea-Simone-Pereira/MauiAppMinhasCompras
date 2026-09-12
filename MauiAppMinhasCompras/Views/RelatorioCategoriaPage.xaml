@@ -7,13 +7,13 @@
     <!-- Grid estruturando o topo, a lista expansível e o rodapé fixo -->
     <Grid RowDefinitions="Auto, Auto, *, Auto" Padding="15" RowSpacing="10">
 
-        <!-- Linha 0: Título do Filtro -->
+        <!--Título do Filtro -->
         <Label Grid.Row="0" 
                Text="Filtrar Categoria:" 
                FontSize="16" 
                FontAttributes="Bold" />
 
-        <!-- Linha 1: Picker para filtrar por categoria -->
+        <!--  Picker para filtrar por categoria -->
         <Picker Grid.Row="1" 
                 x:Name="pck_filtro_categoria" 
                 Title="Selecione uma Categoria" 
@@ -27,7 +27,7 @@
             </Picker.Items>
         </Picker>
 
-        <!-- Linha 2: ListView com rolagem (Row="2" com altura '*') -->
+        <!--  ListView com rolagem (Row="2" com altura '*') -->
         <ListView Grid.Row="2" 
                   x:Name="lst_produtos_categoria"
                   VerticalOptions="FillAndExpand">
@@ -54,7 +54,7 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <!-- Linha 3: Card fixo no rodapé com o Total Gasto -->
+        <!--  Card fixo no rodapé com o Total Gasto -->
         <Frame Grid.Row="3" 
                BackgroundColor="White" 
                CornerRadius="10" 
